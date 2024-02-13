@@ -1,6 +1,6 @@
-import Native from '../native-types'
+import Native from "../native-types"
 
-import type { CLLocationForSaving } from '../types'
+import type { CLLocationForSaving } from "../types"
 
 async function saveWorkoutRoute(
   workoutUUID: string,
@@ -12,7 +12,9 @@ async function saveWorkoutRoute(
       const { timestamp, ...rest } = location
       return {
         ...rest,
-        ...(timestamp ? { timestamp: new Date(timestamp).toISOString() } : { timestamp: '' }),
+        ...(timestamp
+          ? { timestamp: new Date(timestamp).toISOString() }
+          : { timestamp: "" }),
       }
     }),
   )
