@@ -33,8 +33,7 @@
   "lint-staged": {
     "*.swift": "swiftlint ios --fix",
     "*.ts": "eslint --fix",
-    "*.js": "eslint --fix",
-    "*.json": "eslint --fix"
+    "*.js": "eslint --fix"
   },
   "keywords": [
     "react-native",
@@ -151,5 +150,11 @@
       "module",
       "typescript"
     ]
+  },
+  "prettier": {
+    "singleQuote": false,
+    "trailingComma": "all",
+    "printWidth": 80,
+    "semi": false
   }
 }
